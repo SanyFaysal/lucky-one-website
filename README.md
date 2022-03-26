@@ -1,6 +1,6 @@
 # Puzzled public
-
-Live site link : [Puzzled public](https://github.com/facebook/create-react-app).
+________________________________
+# Live site link : [Puzzled public](https://lustrous-phoenix-37e7f0.netlify.app/).
 
 ## Available Scripts
 

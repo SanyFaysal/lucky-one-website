@@ -22,7 +22,7 @@ const Products = () => {
 
     return (
         <div className='row mb-4 mx-auto d-flex justify-content-between'>
-            <div className='col-8 ms-2 row row-cols-1 row-cols-md-3 g-4'>
+            <div className='col-lg-8 col-md-7 col-7 ms-2 row row-cols-1 row-cols-md-3 g-4'>
                 {products.map(product =>
                     <Product
                         product={product}
@@ -31,7 +31,7 @@ const Products = () => {
                     ></Product>
                 )}
             </div>
-            <div className='col-4'>
+            <div className='col-lg-4 col-md-5 col-5'>
                 <Cart selectedWatches={watches} ></Cart>
             </div>
         </div>
