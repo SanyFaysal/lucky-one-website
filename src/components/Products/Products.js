@@ -32,7 +32,7 @@ const Products = () => {
                 )}
             </div>
             <div className='col-4'>
-                <Cart selectedWatches={watches}></Cart>
+                <Cart selectedWatches={watches} ></Cart>
             </div>
         </div>
 
