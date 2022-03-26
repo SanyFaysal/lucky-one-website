@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Puzzled public
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site link : [Puzzled public](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

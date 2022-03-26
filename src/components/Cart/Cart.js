@@ -7,13 +7,30 @@ const Cart = ({ selectedWatches }) => {
     let selectedProducts = [...selectedWatches];
     const [select, setSelect] = useState([]);
     const randomSelection = (allSelect) => {
-        const random = Math.floor(Math.random() * 5);
+        let random = Math.floor(Math.random() * 5);
         const selection = allSelect[random];
-        const watches = selectedProducts.find(product => product.name === selection.name);
-        setSelect(watches)
+        if (random <= 4) {
+            if (selectedProducts.length <= 4) {
+                const watches = selectedProducts.find(product => product.name === selection.name);
+                setSelect(watches)
+            }
+            else {
+                alert('Insert 4 Products')
+                document.getElementById('displaySelect').textContent = ''
+            }
+        }
+        else {
+            random = 4;
+            const watches = selectedProducts.find(product => product.name === selection.name);
+            setSelect(watches)
+        }
+
+
     }
-
-
+    const clearDisplay = () => {
+        selectedProducts = [];
+        setSelect(selectedProducts)
+    }
 
     return (
         <div className='mt-5 shadow  sticky-top p-3'>
@@ -30,7 +47,7 @@ const Cart = ({ selectedWatches }) => {
             <button onClick={() => randomSelection(selectedProducts)} className='btn bg-success text-white bg-opacity-75  fs-5   w-100' >
                 Select 1 for me
             </button>
-            <button className='btn bg-danger text-white bg-opacity-75 fs-5 mt-2  mb-5 w-100'>
+            <button onClick={() => clearDisplay()} className='btn bg-danger text-white bg-opacity-75 fs-5 mt-2  mb-5 w-100'>
                 Select Again
             </button>
         </div>
