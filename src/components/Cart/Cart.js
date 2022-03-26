@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DisplaySelected from '../DisplaySelected/DisplaySelected';
-import RandomSelect, { show } from '../RandomlySelected/RandomSelect';
+import RandomSelect from '../RandomlySelected/RandomSelect';
 
 
 const Cart = ({ selectedWatches }) => {
